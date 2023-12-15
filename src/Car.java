@@ -11,4 +11,10 @@ public class Car extends Vehicle{
         String mask = "марка: %s модель: %s год выпуска: %d%n";
         return String.format(mask, this.model, this.model, this.year);
     }
+
+    @Override
+    public void displayInfo(){
+        super.displayInfo();
+        System.out.println(this.model);
+    }
 }
